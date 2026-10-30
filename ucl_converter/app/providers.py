@@ -1,10 +1,10 @@
 import json, httpx
 
 PROVIDERS = {
-    "gemini": {"label": "Google Gemini", "model": "gemini-2.5-flash", "key_label": "Gemini API key", "base_url": "https://generativelanguage.googleapis.com/v1beta"},
+    "gemini": {"label": "Google Gemini", "model": "gemini-3.8-flash", "key_label": "Gemini API key", "base_url": "https://generativelanguage.googleapis.com/v1beta"},
     "openai": {"label": "OpenAI API (GPT models)", "model": "gpt-4.1", "key_label": "OpenAI API key", "base_url": "https://api.openai.com/v1"},
     "anthropic": {"label": "Anthropic Claude", "model": "claude-sonnet-4-20250514", "key_label": "Anthropic API key", "base_url": "https://api.anthropic.com/v1"},
-    "openrouter": {"label": "OpenRouter (multiple models)", "model": "google/gemini-2.5-flash", "key_label": "OpenRouter API key", "base_url": "https://openrouter.ai/api/v1"},
+    "openrouter": {"label": "OpenRouter (multiple models)", "model": "google/gemini-3.8-flash", "key_label": "OpenRouter API key", "base_url": "https://openrouter.ai/api/v1"},
     "azure_openai": {"label": "Azure OpenAI", "model": "", "key_label": "Azure OpenAI key", "base_url": ""},
     "ollama": {"label": "Ollama (local model)", "model": "qwen2.5-coder:14b", "key_label": "Optional Ollama key", "base_url": "http://localhost:11434/v1"},
     "custom_openai": {"label": "Custom OpenAI-compatible API", "model": "", "key_label": "Provider API key", "base_url": ""},
